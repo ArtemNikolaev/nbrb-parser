@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- simple app build
 - simple web-worker build
-- [webpack]
+- dep: [webpack]
+- dep: [webpack-cli]
+- dep: [html-webpack-plugin]
 
 [webpack]: https://webpack.js.org/
+[webpack-cli]: https://webpack.js.org/api/cli/
+[html-webpack-plugin]: https://webpack.js.org/plugins/html-webpack-plugin/
