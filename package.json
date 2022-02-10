@@ -4,9 +4,14 @@
   "description": "nbrb API parser with all available data",
   "main": "index.js",
   "scripts": {
+    "start": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Artem Nikoalev <artem@nikolaev.by>",
-  "license": "unlicense"
+  "license": "unlicense",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
