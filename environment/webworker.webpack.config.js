@@ -5,6 +5,6 @@ module.exports = {
     entry: './_/worker/index.js',
     output: {
         path: path.resolve(__dirname, '../dist'),
-        filename: 'web-worker.js',
+        filename: 'web-worker.bundle.js',
     },
 };
