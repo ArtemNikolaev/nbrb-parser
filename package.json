@@ -1,0 +1,12 @@
+{
+  "name": "nbrb-parser",
+  "version": "0.0.0",
+  "description": "nbrb API parser with all available data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Artem Nikoalev <artem@nikolaev.by>",
+  "license": "unlicense"
+}
