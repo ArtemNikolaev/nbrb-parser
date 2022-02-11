@@ -1,0 +1,13 @@
+GET https://www.nbrb.by/api/exrates/currencies
+Accept: application/json
+
+###
+
+GET https://www.nbrb.by/api/exrates/rates/USD?parammode=2&ondate=2021-6-6
+Accept: application/json
+
+<> 2022-02-11T124131.200.json
+<> 2022-02-11T124020.200.json
+<> 2022-02-11T123940.200.json
+
+###
