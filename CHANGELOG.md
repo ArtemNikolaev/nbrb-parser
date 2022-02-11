@@ -5,14 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.1.0] - 2022-02-12
 ### Added
-- http query file for tests
-- API call for rates
-- cmd mapper for api calls
-- API call for all available currencies
-- connected app and worker together
-- simple app build
-- simple web-worker build
+- basic FE implementation
+- nbrb.by API web-worker
 - dep: [webpack]
 - dep: [webpack-cli]
 - dep: [html-webpack-plugin]
@@ -20,3 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [webpack]: https://webpack.js.org/
 [webpack-cli]: https://webpack.js.org/api/cli/
 [html-webpack-plugin]: https://webpack.js.org/plugins/html-webpack-plugin/
+
+[Unreleased]: https://github.com/ArtemNikolaev/nbrb-parser/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ArtemNikolaev/nbrb-parser/releases/tag/v0.1.0
