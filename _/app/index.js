@@ -1,4 +1,4 @@
-const worker = new Worker('./web-worker.bundle.js');
+const worker = new Worker('./api-worker.bundle.js');
 
 worker.addEventListener('message', ({data}) => {
     switch (data.msg) {

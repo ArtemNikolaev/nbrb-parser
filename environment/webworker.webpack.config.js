@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './_/worker/index.js',
+    entry: './_/api-worker/index.js',
     output: {
         path: path.resolve(__dirname, '../dist'),
-        filename: 'web-worker.bundle.js',
+        filename: 'api-worker.bundle.js',
     },
 };
