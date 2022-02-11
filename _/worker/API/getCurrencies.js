@@ -1,5 +1,5 @@
 const fetchJSON = require('../utils/fetchJSON');
-const { CURRENCIES } = require('./api');
-const currenciesMapper = require('../mappers/currencies');
+const currenciesUrl = require('./api').CURRENCIES();
+const currenciesMapper = require('../mappers/currency');
 
-module.exports = () => fetchJSON(CURRENCIES).then(currenciesMapper);
+module.exports = () => fetchJSON(currenciesUrl).then(currenciesMapper);
