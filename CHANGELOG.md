@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- cmd mapper for api calls
 - API call for all available currencies
 - connected app and worker together
 - simple app build

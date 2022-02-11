@@ -1,6 +1,6 @@
-const getCurrencies = require('./API/getCurrencies');
+const msgMapper = require('./mappers/msgMapper');
 
-getCurrencies()
+msgMapper.getCurrencies()
     .then(payload => ({ msg: 'currencies', payload}))
     .then(postMessage);
 
