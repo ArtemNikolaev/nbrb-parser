@@ -1,6 +1,7 @@
-const baseUrl = 'https://www.nbrb.by/api/'
+const baseUrl = 'https://www.nbrb.by/api/exrates/'
 
 module.exports = {
-    CURRENCIES: `${baseUrl}exrates/currencies`,
-    RATES: `${baseUrl}exrates/rates`,
+    CURRENCIES: `${baseUrl}currencies`,
+    RATES: `${baseUrl}rates`,
+    DYNAMICS: `${baseUrl}rates/dynamics/`
 }

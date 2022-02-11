@@ -8,6 +8,9 @@ worker.addEventListener('message', ({data}) => {
         case 'rates':
             console.log('rates', data.payload);
             break;
+        case 'dynamics':
+            console.log('dynamics', data.payload);
+            break;
         default:
             console.log('frontend: message received: ', data)
     }
