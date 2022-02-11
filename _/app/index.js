@@ -11,9 +11,15 @@ worker.addEventListener('message', ({data}) => {
         case 'dynamics':
             console.log('dynamics', data.payload);
             break;
+        case 'error':
+            console.error('error', data.payload);
+            break;
         default:
             console.log('frontend: message received: ', data)
     }
 })
 
-worker.postMessage('hello, worker');
+worker.postMessage({ msg: 'not exist'});
+worker.postMessage({msg: 'rates'});
+worker.postMessage({msg: 'dynamics'});
+worker.postMessage({msg: 'dynamics', payload: {id:190, startdate:'2016-6-1', enddate:'2016-6-30'}});

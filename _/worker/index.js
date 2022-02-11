@@ -1,19 +1,16 @@
 const msgMapper = require('./mappers/msgMapper');
 
-msgMapper.getCurrencies()
+msgMapper.currencies()
     .then(payload => ({ msg: 'currencies', payload}))
     .then(postMessage);
 
-msgMapper.getRates()
-    .then(payload => ({ msg: 'rates', payload}))
-    .then(postMessage);
-
-msgMapper.getDynamics(190, '2016-6-1', '2016-6-30')
-    .then(payload => ({ msg: 'dynamics', payload}))
-    .then(postMessage);
-
 addEventListener('message', ({data}) => {
-    console.log('worker: message received', data);
+    if (!msgMapper[data.msg]) {
+        return postMessage({msg: 'error', payload: `'${data.msg}' type doesn't exists`});
+    }
 
-    postMessage('hello frontend');
+    msgMapper[data.msg](data.payload)
+        .then(payload => ({msg: data.msg, payload}))
+        .catch(payload => ({msg: 'error', payload}))
+        .then(postMessage);
 });
